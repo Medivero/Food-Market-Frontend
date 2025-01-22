@@ -1,7 +1,7 @@
 import getCookie from "../getCookie"
 const ButtonDecrement = async (id,changeAmount,setAmountProduct) =>{
     try {
-      const res = await fetch(`http://194.58.34.224:14342/api/User/GetUserCart/${getCookie('key')}`, {
+      const res = await fetch(`/api/User/GetUserCart/${getCookie('key')}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -17,7 +17,7 @@ const ButtonDecrement = async (id,changeAmount,setAmountProduct) =>{
         else{
           if (product.amount == 1){
             try {
-              await fetch(`http://194.58.34.224:14342/api/ShoppingCart/DeleteById/${product.elementId}`, {
+              await fetch(`/api/ShoppingCart/DeleteById/${product.elementId}`, {
                 method: 'DELETE'
               })
               return changeAmount(),
@@ -29,7 +29,7 @@ const ButtonDecrement = async (id,changeAmount,setAmountProduct) =>{
           else {
             try{
               const needAmount = product.amount-1;
-              await fetch('http://194.58.34.224:14342/api/ShoppingCart/UpdateAmount',{
+              await fetch('/api/ShoppingCart/UpdateAmount',{
                 method: 'PATCH',
                 headers: {
                   'Content-Type': 'application/json'
