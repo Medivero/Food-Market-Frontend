@@ -1,0 +1,20 @@
+.header-admin-panel{
+    border-bottom: 2px solid;
+    font-size: 30px;
+}
+.main-admin-panel{
+    padding: 0px 50px;
+
+}
+.gapforLi{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-for-createCategory{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 50px;
+}

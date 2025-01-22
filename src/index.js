@@ -1,0 +1,11 @@
+import React, { Children } from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import react from 'react';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    
+        <App></App>,
+    document.getElementById('root')
+);

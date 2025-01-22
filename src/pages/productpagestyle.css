@@ -1,0 +1,230 @@
+.background-product-main{
+    background-color: rgb(222, 222, 222);
+    height: fit-content;
+    justify-content: center;
+    display: flex;
+    padding: 20px 40px;
+}
+.product-box{
+    flex-flow: column nowrap;
+    display: flex;
+    padding: 30px 40px;
+    gap: 50px;
+    height: fit-content;
+    width: 80%;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 200%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.product-image{
+    object-fit: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 2px;
+}
+.product-title{
+    height: fit-content;
+    width: fit-content;
+    border-bottom: 2px solid rgb(255, 187, 0);
+    padding-bottom: 1%;
+}
+.correct-title-image{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.price-title{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: rgb(255, 246, 77);
+    padding: 10px;
+    font-size: 120%;
+}
+.description-product{
+    font-size: 80%;
+}
+.rating-box{
+   
+}
+
+.button-add-cart{
+    flex: 1;
+    margin: 15px 0px;
+    cursor: pointer;
+    font-size: 100%;
+    border: 0;
+    transition: 0.5s;
+    border-radius: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: burlywood;
+    color: white;
+    transition: 0.5s;
+}
+.button-add-cart:hover,.button-decrement:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+@keyframes step-star{
+    from{
+        opacity: 0;
+    }
+    to{
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        opacity: 1;
+    }
+}
+.star{
+    opacity: 0;
+    color: rgb(255, 197, 5);
+    animation: 2s step-star forwards;
+    user-select: none;
+}
+.amount-count-product{
+    color: rgb(255, 255, 255);
+    font-size: 170%;
+    height: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(21, 150, 1);
+    position: absolute;
+    overflow: hidden;
+    bottom: 80px;
+    animation: 1s open-amount forwards;
+}
+.product-not-exist{
+    position: absolute;
+    visibility: hidden;
+}
+@keyframes open-amount{
+    from{
+
+    }
+    to{
+        height: 30px;
+        
+    }
+}
+.buttons-box-productpage{
+    display: flex;
+    gap: 10px;
+}
+.button-decrement{
+    overflow: hidden;
+    margin: 15px 0px;
+    cursor: pointer;
+    font-size: 100%;
+    border: 0;
+    border-radius: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: burlywood;
+    color: white;
+    width: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.open-button-decrement{
+    flex: 0.2;
+    opacity: 1;
+    visibility: visible;
+    width: fit-content;
+}
+.delete-product-from-cart{
+    background-color: rgb(173, 0, 0);
+}
+.mark-product-page-container{
+    padding: 20px;
+    gap: 50px;
+    display: flex;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid;
+    border-radius: 12px;
+    width: 1000px;
+    height: 200px;
+    box-shadow: 2px 2px 10px 2px ;
+    margin-top: 20px;
+}
+.mark-and-description-box{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    border-radius: 12px;
+}
+.username-avatar-mark{
+    height: 100px;
+    width: 100px;
+}
+.username-mark{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    width: fit-content;
+}
+.marks-by-user{
+    background-image: url('/src/assets/1_2789.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    height: 60px;
+    width: 60px;
+}
+.name-and-avatar-box-mark{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.description-box{
+    font-size: 20px;
+    width: 600px;
+}
+.input-container-for-mark{
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color:rgb(226, 226, 226) ;
+    height: 200px;
+    padding: 20px;
+    width: 1000px;
+}
+.form-mark-box{
+    font-size: 20px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 100px;
+}
+.input-for-PostReview{
+    width: fit-content;
+    border: 0;
+    border-radius: 5px;
+    font-size: 30px;
+}
+.submit-Review{
+    border: 0;
+    width: fit-content;
+    font-size: 30px;
+    border-radius: 12px;
+    height: 50px;
+    width: fit-content;
+    box-shadow: 0px 0px 10px 2px;
+    transition: 0.5s;
+}
+.submit-Review:hover{
+    background-color: antiquewhite;
+}
+.box-inputs-review{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.createdAt-review{
+    color: grey;
+    font-size: 50%;
+}

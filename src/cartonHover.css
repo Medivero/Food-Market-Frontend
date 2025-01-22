@@ -1,0 +1,31 @@
+.hoverCart-container{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 12px;
+    z-index: 50;
+    position: absolute;
+    height: fit-content;
+    width: 230px;
+    transform: translate(100px,-20px);
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border: 1px solid;
+}
+.stars-for-Hover{
+    color: rgb(255, 170, 0);
+    font-size: 20px;
+}
+.imageforHoverCart{
+    height: 200px;
+}
+.HoverCartBorder{
+    border-top: 1px solid;
+}
+.HoverCartPrice{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    background-color: rgb(255, 222, 74);
+}

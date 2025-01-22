@@ -1,0 +1,79 @@
+.profile-main-container{
+    display: flex;
+    height: fit-content;
+    background-color: rgb(240, 240, 240);
+    padding: 40px 50px;
+    flex-direction: column;
+    gap: 10px;
+}
+.title-profile-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 200%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 70px;
+    background-color: white;
+    border-radius: 25px;
+}
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    height: fit-content;
+    width: 80%;
+    border-radius: 25px;
+    padding: 40px 50px;
+}
+.profile-element{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150%;
+    background-color: wheat;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 3px rgb(204, 185, 149);
+}
+.quitprofile{
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 150%;
+    background-color: rgb(255, 66, 66);
+    color: white;
+}
+.quitprofile:hover{
+    background-color: brown;
+}
+.profile-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.button-change-profile{
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 120%;
+    transition: 0.5s;
+}
+.button-change-profile:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.form-change-profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.input-change-profile{
+    overflow: visible;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid;
+    height: fit-content;
+    font-size: 150%;
+}

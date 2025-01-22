@@ -1,0 +1,142 @@
+.submit-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 50px;
+}
+.registr-menu{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+
+    height: 600px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    border-radius: 12px;
+    font-size: 300%;
+}
+.positionoflogin{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+}
+.rg-menu-open{
+    width: 500px;
+    height: 600px;
+    box-shadow: 0px 2px 10px 0.5px;
+}
+.rg-menu-close{
+    height: 0px;
+}
+.rg-button-submit{
+    flex: 1;
+    border: 0;
+    background-color: greenyellow;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 50%;
+    border-radius: 5px;
+    user-select: none;
+}
+.rg-button-submit:hover{
+    background-color: green;
+    color: white;
+}
+.rg-login{
+    font-size: 50%;
+    border: 0;
+    border-bottom: 2px solid;
+}
+.rg-password{
+    font-size: 50%;
+    border: 0;
+    border-bottom: 2px solid;
+}
+.rg-button{
+    cursor: pointer;
+    user-select: none;
+    margin-top: 20px;
+    font-size: 50%;
+    border: 0;
+    background-color: aquamarine;
+    border-radius: 5px;
+    width: 250px;
+    transition: 0.2s;
+}
+.rg-button:hover{
+    background-color: blue;
+    color: white;
+}
+
+.registration-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    width: 500px;
+    background-color: white;
+    transition: 0.2s;
+}
+.registration-menu-open{
+    box-shadow: 0px 0px 5px 1px;
+    width: 500px;
+    height: 300px
+}
+.registration-menu-close{
+    height: 0px;
+}
+.button-close-reg-menu{
+    position: relative;
+    left: 40%;
+    height: 50px;
+    width: 100px;
+    border: 0;
+    background-color: transparent;
+    font-size: 50%;
+    cursor: pointer;
+}
+.submit-container-reg{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.other-space{
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    z-index: 8;
+    height: 2000px;
+    width: 2000px;
+    opacity: 0;
+}
+.space-exist{
+    visibility: visible;
+}
+.space-not-exist{
+    visibility: hidden;
+}
+.input-reg-element{
+    font-size: 50%;
+    border: 0;
+    border-bottom: 1px solid;
+}
+.button-reg-element{
+    border: 0;
+    font-size: 50%;
+    cursor: pointer;
+    background-color: rgb(136, 136, 252);
+    color: white;
+}
+.button-reg-element:hover{
+    background-color: blue;
+}

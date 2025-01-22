@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+}
+.position-menu{
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 2px 0px 10px 5px;
+}
+.empty-box{
+    background-color: white;
+    height: 220px;
+}
+.header-info{
+    height: 33px;
+    
+    background-color: rgb(227, 227, 227);
+}
+.header-text{
+    display: inline-block;
+    padding: 7px 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90%;
+    color: grey;
+}
+.header-position{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+.tyo{
+    color: grey;
+}
+.tyo::before{
+    position: relative;
+    content: url('assets/fluent--vehicle-car-profile-16-filled.svg');
+    top: 5px;
+}
+.dt::before{
+    position: relative;
+    content: url('assets/lineicons--map-marker-5.svg');
+    top: 2px;
+}
+.ao::before{
+    position: relative;
+    content: url('assets/bxs--offer.svg');
+    top: 3px;
+}
+.main-menu{
+    display: flex;
+    height: fit-content;
+    padding: 20px 0px;
+    flex-flow: row nowrap;
+    border-bottom: 0.5mm solid rgb(231, 171, 51);
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.sign-cart{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.span-title-element{
+    position: relative;
+    transition: 0.2s;
+}
+.span-title-element:hover{
+    color: rgb(255, 243, 174);
+}
+@media (max-width:450px){
+    
+    .position-menu{
+        margin: 0px 70px;
+        position: static;
+        box-shadow: 0 0 0 0;
+    }
+    .header-info{
+        display: none;
+    }
+    .main-menu{
+        display: flex;
+        padding: 20px 100px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        border: 0;
+    }
+    .empty-box{
+        display: none;
+    }
+    .product-list-main-3{
+        height: fit-content;
+        width: fit-content;
+    }
+    .product-list-main-3{
+        display: none;
+    }
+    .menu-button{
+        visibility: hidden;
+    }
+    .product-list-container-2{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 400px;
+    }
+    .product-list-container{
+        width: 700px;
+        scale: 70%;
+        flex-wrap: wrap;
+        
+    }
+    .position-all-of-main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 150px
+    }
+    .product-list-container-4{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 600px;
+        width: 500px;
+    }
+    .product-list-element-4{
+        
+    }
+    .product-list-main{
+        padding: 0px;
+    }
+}
+li{
+    list-style-type: none;
+}
+.title-menu{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 250%;
+    color: rgb(231, 171, 51);
+    transition: 0.5s;
+}
+.search-info{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(255, 231, 183);
+    gap: 10px;
+    align-items: center;
+    scale: 150%;
+}
+.find{
+    font-size: 50%;
+    padding: 0;
+    height: 25px;
+    position: relative;
+    top: 5px;
+    width: 25px;
+    background-image: url('./assets/find-svgrepo-com.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.find:hover{
+    scale: 110%;
+}
+.box-search-result{
+    overflow: hidden;
+    height: fit-content;
+    position: absolute;
+    background-color: rgb(255, 208, 113);
+    width: 450px;
+    border-radius: 5px;
+    border: 1px solid;
+    transform: translate(-75px,10px);
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(252, 252, 252);
+    transition: 0.5s;
+}
+.box-result-open{
+    height: 50px;
+    height: fit-content;
+}
+.box-result-close{
+    padding: 0;
+    height: 0px;
+}
+.text-result-search{
+    color: rgb(0, 0, 0);
+    background-color: floralwhite;
+    padding: 2px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    transition: 0.2s;
+}
+.text-result-search:hover{
+    font-size: 105%;
+}
+.dots{
+    content: url(assets/dots-9-svgrepo-com.svg);
+    padding-right: 6px;
+    cursor: pointer;
+}
+.search-info-input{
+    display: flex;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80%;
+}
+
+.cart{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+}
+.cart::before{
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-40px) translateY(-5px);
+    content: url(assets/cart-shopping-svgrepo-com.svg);
+}
+.sign-in{
+    cursor: pointer;
+    user-select: none;
+    color: grey;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sign-in::before{
+    position: absolute;
+    transform: translateX(-40px) translateY(-5px);
+    content: url(assets/personal-svgrepo-com.svg);
+}
+
+.poster-main{
+    padding: 0 30%;
+
+}
+
+.product-list-main{
+    color: grey;
+    height: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 70px;
+}
+.text-before-plist{
+    font-size: 120%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(231, 171, 51);
+    flex-wrap: wrap;
+
+}
+.smartphones{
+    color: rgb(231, 171, 51);
+}
+.product-list-container{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    padding: 0;
+    justify-content: space-around;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+.product-list-element{
+    display: flex;
+    border-radius: 12px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid grey;
+    transition: 0.5s;
+}
+.product-bottom-element{
+    border-radius: 12px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    z-index: 0;
+    align-items: center;
+}
+.product-list-element:hover{
+    box-shadow: 0px 2px 10px 1px rgb(231, 171, 51);
+    border: 1px solid rgb(255, 234, 113);
+}
+.product-list-main-2{
+    color: grey;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 70px;
+}
+.text-before-plist-2{
+    font-size: 120%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(231, 171, 51);
+}
+.product-list-container-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    padding-top: 20px;
+}
+.product-list-element-2{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(240, 240, 240);
+    transition: 0.5s;
+}
+.product-list-element-2:hover{
+    box-shadow: 0px 2px 10px 1px rgb(231, 171, 51);
+    border: 1px solid rgb(231, 171, 51);
+}
+.product-list-main-3{
+    color: grey;
+    height: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 70px;
+}
+.text-before-plist-3{
+    font-size: 120%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(231, 171, 51);
+}
+.product-list-container-3{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    padding-top: 40px;
+}
+.product-list-element-3{
+    border: 2px solid;
+    height: 250px;
+    width: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.product-list-main-4{
+    color: grey;
+    height: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 70px;
+}
+.product-list-container-4{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    padding-top: 40px;
+}
+.product-list-element-4{
+    background-color: rgb(247, 247, 247);
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.product-list-element-4:hover{
+    border: 1px solid rgb(231, 171, 51);
+    box-shadow: 0px 0px 5px 1px rgb(231, 171, 51);
+}
+.text-bottom-second-element{
+    color: black;
+    font-size: 120%;
+    text-align: center;
+    width: 150px;
+    margin-top: 10px;
+}
+.status-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: transparent;
+    height: 0px;
+    z-index: 1000;
+    width: 200px;
+    transition: 0.5s;
+    border-radius: 5px;
+    visibility: hidden;
+}
+@keyframes login-open{
+    30%{
+        visibility: visible;
+        color: white; 
+        background-color: rgb(58, 205, 50);
+        height: 60px;
+    }
+
+    100%{
+        visibility: hidden;
+        height: 0px;
+    }
+}
+.status-login-open{
+    animation: 5s login-open forwards;
+}
+@keyframes uncorrect{
+    30%{
+        visibility: visible;
+        color: white; 
+        background-color: rgb(202, 26, 26);
+        height: 60px;
+        
+    }
+    100%{
+        visibility: hidden;
+        height: 0px;
+    }
+}
+.status-login-uncorrect{
+    animation: 5s uncorrect forwards;
+}
+.cartLength{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 15px;
+    transform: translate(-29px,-15px);
+    text-align: center;
+    z-index: 2;
+    background-color: rgb(252, 198, 48);
+    padding: 1px 8px;
+    border-radius: 50%;
+}
+
+
+

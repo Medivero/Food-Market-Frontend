@@ -1,0 +1,32 @@
+.correct-scale-image{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.correct-scale-image-second-list{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.correct-scale-image-fourth-list{
+    width: 100%;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.price-number-for-list{
+    color: white;
+    background-color: rgb(255, 162, 49);
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    position: absolute;
+    border-radius: 12px;
+    padding: 12px;
+    transition: 0.5s;
+}
+.product-top-element:hover .price-number-for-list{
+    scale: 120%;
+    opacity: 0;
+}

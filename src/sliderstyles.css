@@ -1,0 +1,88 @@
+.silder-main-container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.slider-container{
+    height: 450px;
+    width: fit-content;
+    border: 2px solid;
+    border-radius: 5px;
+}
+.buttons-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttons-slider{
+    height: 40px;
+    background-color: bisque;
+    border: 0;
+    cursor: pointer;
+    font-size: 120%;
+    border-radius: 5px;
+}
+.buttons-slider:hover{
+    background-color: blanchedalmond;
+}
+.image-slider{
+    max-height: 100%;
+    transition: 0.5s;
+}
+@keyframes moving-text-right{
+    from{
+        transform: translateX(-70%);
+    }
+    to{
+        transform: translateX(-10%);
+    }
+}
+@keyframes moving-text-left{
+    from {
+        transform: translateX(3%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.moving-text-container{
+    background-image: url('assets/preloader.jpg');
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.moving-right{
+    animation: 50s moving-text-right linear infinite;
+}
+.moving-left{
+    padding-top: 100px;
+    animation: 50s moving-text-left linear infinite;
+}
+.moving-text{
+    text-shadow: 10px 10px 10px black;
+    position: relative;
+    top: 50px;
+    color: white;
+    white-space: nowrap;
+    height: fit-content;
+    font-size: 700%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: fit-content;
+    transition: 1s;
+}
+@media (max-width: 400px){
+    .silder-main-container{
+        display: none;
+    }
+}

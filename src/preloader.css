@@ -1,0 +1,49 @@
+@keyframes rotation-box{
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 185, 17);
+    z-index: 9999;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.loader-text{
+    z-index: 2;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 300%;
+    transition: 1s ease-in;
+}
+.loader-text:hover{
+    color: rgb(255, 185, 23);
+}
+.box-loader{
+    background-color: cornsilk;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 10px rgb(255, 255, 255);
+    animation: rotation-box 3.5s linear forwards infinite;
+    border-radius: 2px;
+}
+.loaded{
+    opacity: 0;
+    visibility: hidden;
+}
+.not-loaded{
+    opacity: 1;
+}

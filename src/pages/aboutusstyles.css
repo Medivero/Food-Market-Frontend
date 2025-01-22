@@ -1,0 +1,55 @@
+
+.about-us-bg{
+    background-color: black;
+    color: white;
+    height: 900px;
+}
+.title-about-us{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 250%;
+    padding: 50px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    animation: 1s title-move-about-us forwards ;
+}
+@keyframes title-move-about-us{
+    from{
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.position-back-to-main{
+    position: absolute;
+    left: 50px;
+    width: fit-content;
+    height: fit-content;
+}
+.back-to-main-page-color-bg{
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    font-size: 150%;
+    color: black;
+    animation: 1s moving-box-back forwards ease-in;
+    white-space: nowrap;
+}
+.opacity-back-to-main{
+    opacity: 0;
+    visibility: hidden;
+}
+@keyframes moving-box-back{
+    from{
+        width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: 350px;
+        box-shadow: 0px 0px 10px 0px white;
+    }
+}
