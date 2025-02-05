@@ -15,7 +15,7 @@ function CartPage(){
   const [cart, setCart] = useState([])
   function getCartUser() {
     try{
-      fetch(`http://194.58.34.224:14342/api/User/GetUserCart/${getCookie('key')}`,{
+      fetch(`/api/User/GetUserCart/${getCookie('key')}`,{
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
