@@ -81,7 +81,7 @@ function Signmenu({updateStateOfCart}){
             login: logInlogin,
             password: loginpass
         }
-        const res = await fetch(`http://194.58.34.224:14342/api/User/Login`, {
+        const res = await fetch(`/api/User/Login`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json', 
