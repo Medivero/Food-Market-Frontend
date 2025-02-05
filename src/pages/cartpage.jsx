@@ -42,7 +42,7 @@ function CartPage(){
     }
   }
   function deleteCart(idProduct) {
-    fetch(`http://194.58.34.224:14342/api/ShoppingCart/DeleteById/${idProduct}`,{
+    fetch(`/api/ShoppingCart/DeleteById/${idProduct}`,{
       method: 'DELETE'
     }).then(() => {
         getCartUser()
