@@ -59,7 +59,7 @@ function MainMenu(){
     }
     else{
     try{
-    const res = await fetch(`http://194.58.34.224:14342/api/Product/SearchbyKeyword/${poiskUnit}`, {
+    const res = await fetch(`/api/Product/SearchbyKeyword/${poiskUnit}`, {
         method: 'GET'
       })
       console.log(poiskUnit)
