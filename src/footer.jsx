@@ -17,11 +17,11 @@ function Footer1(){
                     <div>   
                         Whats App    
                     </div>
-                <div>+7 980-750-70-11</div>
+                <div></div>
                 </div>
                 <div className="call-us">
                     <div >Позвонить по номеру</div>
-                    <div>+7 980-750-70-11</div>
+                    <div></div>
                 </div>
             </section>
         </div>
